@@ -1,0 +1,186 @@
+/* Página de Login */
+.login-auth-page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Botão Voltar */
+.login-back-button-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-back-button {
+  color: #1B263B;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid #1B263B;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.login-back-button:hover {
+  background-color: #1B263B;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(27, 38, 59, 0.3);
+}
+
+.login-auth-container {
+  background-color: #1B263B;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Logo */
+.login-logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-auth-logo {
+  width: 200px;
+  height: 200px;
+}
+
+/* Formulário */
+.login-auth-form {
+  text-align: left;
+}
+
+.login-form-group {
+  margin-bottom: 25px;
+}
+
+.login-form-label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.login-form-input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #1B263B;
+  box-sizing: border-box;
+}
+
+.login-form-input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.login-form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.login-error-message {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 5px;
+  background-color: rgba(255, 107, 107, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-left: 3px solid #ff6b6b;
+}
+
+/* Botão */
+.login-auth-button {
+  width: 100%;
+  background-color: #ffffff;
+  color: #1B263B;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-auth-button:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-auth-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Link */
+.login-auth-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.login-link-text {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link-text:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+  .login-auth-container {
+    padding: 50px 40px;
+  }
+  
+  .login-auth-logo {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .login-form-label {
+    font-size: 18px;
+  }
+  
+  .login-form-input {
+    font-size: 18px;
+    padding: 18px;
+  }
+  
+  .login-auth-button {
+    font-size: 20px;
+    padding: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .login-auth-container {
+    padding: 60px 50px;
+  }
+  
+  .login-auth-logo {
+    width: 300px;
+    height: 300px;
+  }
+}
